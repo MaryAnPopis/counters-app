@@ -6,7 +6,7 @@ import { ButtonLocked } from './Button'
 export default function Blocked(props) {
   return (
     <Style.Block>
-      <ButtonLocked name="Unlocked Counter" onClick={props.onClick} />
+      <ButtonLocked name="unlocked counter" onClick={props.onClick} />
     </Style.Block>
   )
 }

@@ -3,6 +3,15 @@ export const RESET = 'RESET'
 export const DELETE = 'DELETE'
 export const ADD_COUNTER = 'ADD_COUNTER'
 export const BLOCKED = 'BLOCKED'
+export const ADD_USER = 'ADD_USER'
+export const INITIALIZE_STATE = ''
+
+export const initialize_state = newState => {
+  return {
+    type: INITIALIZE_STATE,
+    newState,
+  }
+}
 
 export const increment = id => {
   return {
@@ -32,5 +41,10 @@ export const reset = id => {
 export const add_counter = () => {
   return {
     type: ADD_COUNTER,
+  }
+}
+export const add_user = () => {
+  return {
+    type: ADD_USER,
   }
 }

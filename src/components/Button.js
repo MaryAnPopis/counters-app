@@ -35,6 +35,7 @@ Style.ButtonSecondary = styled(Style.Button)`
   background-color: white;
   color: #f24571;
   padding: 0.1rem 0.5rem;
+
   &:hover {
     border-radius: 0;
     border-bottom: 1.5px solid #f24571;
