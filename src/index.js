@@ -7,7 +7,7 @@ import { INCREMENT, ADD_COUNTER, RESET, DELETE, BLOCKED } from './actions'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
-let initialState = { counters: [{ counterId: 1, name: 'test', value: 20 }] }
+let initialState = { counters: [] }
 
 const reducer = (state = initialState, action) => {
   let counter = state.counters.find(counter => counter.counterId === action.id) //Finds the first item(this case an object) in the array that matches the condition card.counterId === action.id
